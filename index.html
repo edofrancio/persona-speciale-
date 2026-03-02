@@ -5,11 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Mia Persona Speciale</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px; }
-    header { background-color: #ffcccb; padding: 10px; text-align: center; }
-    h1 { margin: 0; }
-    section { margin-top: 20px; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff5f7; margin: 0; padding: 20px; color: #333; }
+    header { background-color: #ffccd5; padding: 20px; text-align: center; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    h1 { margin: 0; font-size: 2.5em; }
+    section { margin-top: 30px; }
     .highlight { color: #d9534f; font-weight: bold; }
+
+    /* Hearts animation */
+    .heart {
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+      position: relative;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      50% { transform: translateY(-20px) scale(1.1); opacity: 0.8; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    /* background floating hearts container */
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .floating-hearts .heart {
+      position: absolute;
+      animation: fly 5s linear infinite;
+      font-size: 2rem;
+      opacity: 0.7;
+    }
+    @keyframes fly {
+      0% { transform: translateY(100vh) translateX(0); }
+      100% { transform: translateY(-10vh) translateX(50vw); }
+    }
   </style>
 </head>
 <body>
@@ -39,5 +74,12 @@
     <p>Sei sempre nel mio cuore <span class="heart" style="color:#e74c3c;">&#10084;</span> <span class="heart" style="color:#f1c40f;">&#10084;</span> <span class="heart" style="color:#2ecc71;">&#10084;</span></p>
     <p>Per me sei la stella più brillante e il mio rifugio sicuro. <span class="heart" style="color:#3498db;">&#10084;</span> <span class="heart" style="color:#9b59b6;">&#10084;</span></p>
   </section>
+  <div class="floating-hearts">
+    <span class="heart" style="color:#e74c3c; left:10%; animation-delay:0s;">&#10084;</span>
+    <span class="heart" style="color:#f1c40f; left:30%; animation-delay:1s;">&#10084;</span>
+    <span class="heart" style="color:#2ecc71; left:50%; animation-delay:2s;">&#10084;</span>
+    <span class="heart" style="color:#3498db; left:70%; animation-delay:3s;">&#10084;</span>
+    <span class="heart" style="color:#9b59b6; left:90%; animation-delay:4s;">&#10084;</span>
+  </div>
 </body>
 </html>
