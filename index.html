@@ -49,9 +49,10 @@
       font-size: 2rem;
       opacity: 0.7;
     }
+    /* remove previous floating animation */
     @keyframes fly {
-      0% { transform: translateY(100vh) translateX(0); }
-      100% { transform: translateY(-10vh) translateX(50vw); }
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
     }
     /* falling hearts */
     .falling-hearts {
@@ -66,19 +67,20 @@
     }
     .falling-hearts .heart {
       position: absolute;
-      animation: drop 4s linear infinite;
+      animation: drop 5s linear infinite;
       font-size: 1.5rem;
       opacity: 0.6;
     }
     @keyframes drop {
-      0% { transform: translateY(-10vh) translateX(0); }
-      100% { transform: translateY(110vh) translateX(20vw); }
+      0% { transform: translateY(-10vh); }
+      100% { transform: translateY(110vh); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>La Mia Persona Speciale: <span class="highlight">Mamma</span></h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMmVC63brQqgN9IvAcVRZ8SLbe_WxXTSPIw&s" alt="Immagine speciale" style="max-width:200px; margin-top:10px; border-radius:50%; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
   </header>
 
   <section class="neon-bg">
@@ -108,13 +110,6 @@
     <span class="heart" style="color:#ff6ec7; left:40%; animation-delay:1s;">&#10084;</span>
     <span class="heart" style="color:#ff4e50; left:60%; animation-delay:2s;">&#10084;</span>
     <span class="heart" style="color:#ff6ec7; left:80%; animation-delay:3s;">&#10084;</span>
-  </div>
-  <div class="floating-hearts">
-    <span class="heart" style="color:#e74c3c; left:10%; animation-delay:0s;">&#10084;</span>
-    <span class="heart" style="color:#f1c40f; left:30%; animation-delay:1s;">&#10084;</span>
-    <span class="heart" style="color:#2ecc71; left:50%; animation-delay:2s;">&#10084;</span>
-    <span class="heart" style="color:#3498db; left:70%; animation-delay:3s;">&#10084;</span>
-    <span class="heart" style="color:#9b59b6; left:90%; animation-delay:4s;">&#10084;</span>
   </div>
 </body>
 </html>
