@@ -1,173 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Mamma - Persona Speciale</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #764ba2;
-            padding-bottom: 10px;
-        }
-
-        .section p {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .qualities {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .quality-card {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            font-weight: 500;
-            color: #333;
-        }
-
-        .emoji {
-            font-size: 1.5em;
-            margin-right: 8px;
-        }
-
-        .footer {
-            background: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .heart {
-            color: #ff6b6b;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 2em;
-            }
-
-            .qualities {
-                grid-template-columns: 1fr;
-            }
-
-            .content {
-                padding: 25px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Mia Persona Speciale</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px; }
+    header { background-color: #ffcccb; padding: 10px; text-align: center; }
+    h1 { margin: 0; }
+    section { margin-top: 20px; }
+    .highlight { color: #d9534f; font-weight: bold; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>👩‍🦰 La Mia Mamma 👩‍🦰</h1>
-            <p>La Mia Persona Speciale</p>
-        </div>
+  <header>
+    <h1>La Mia Persona Speciale: <span class="highlight">Mamma</span></h1>
+  </header>
 
-        <div class="content">
-            <div class="section">
-                <h2><span class="emoji">💕</span>Chi È Per Me</h2>
-                <p>Mamma è la persona più importante della mia vita. È il mio punto di riferimento, la mia forza, il mio calore. Con lei mi sento sempre al sicuro, protetto e amato incondizionatamente.</p>
-            </div>
+  <section>
+    <h2>Chi è mia mamma?</h2>
+    <p>Mia mamma è una persona incredibile che mi sostiene sempre. È gentile, forte e molto amorevole. 
+       Ogni giorno mi insegna il valore della pazienza e della determinazione.</p>
+  </section>
 
-            <div class="section">
-                <h2><span class="emoji">✨</span>Le Sue Qualità Speciali</h2>
-                <div class="qualities">
-                    <div class="quality-card">❤️ Affettuosa e Premurosa</div>
-                    <div class="quality-card">💪 Forte e Coraggiosa</div>
-                    <div class="quality-card">🎯 Determinata e Tenace</div>
-                    <div class="quality-card">😊 Sensibile e Comprensiva</div>
-                    <div class="quality-card">👂 Sempre Mi Ascolta</div>
-                    <div class="quality-card">🌟 Saggia e Consigliata</div>
-                </div>
-            </div>
+  <section>
+    <h2>Cosa la rende speciale?</h2>
+    <ul>
+      <li>Il suo sorriso caloroso</li>
+      <li>La sua capacità di ascoltare</li>
+      <li>La dedizione alla famiglia</li>
+      <li>Il suo spirito di sacrificio</li>
+    </ul>
+  </section>
 
-            <div class="section">
-                <h2><span class="emoji">🌈</span>Momenti Indimenticabili</h2>
-                <p>Ogni momento passato con mamma è prezioso. Dalle conversazioni profonde agli attimi di pura gioia, dalle sfide affrontate insieme ai sorrisi condivisi. Ogni ricordo è un tesoro che porto nel cuore.</p>
-            </div>
-
-            <div class="section">
-                <h2><span class="emoji">🙏</span>La Mia Gratitudine</h2>
-                <p>Le devo tutto quello che sono. Mi ha insegnato i valori più importanti, mi ha incoraggiato nei momenti difficili e ha creduto in me sempre, incondizionatamente. Per questo e per molto altro, le sarò eternamente grato.</p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>Ti amo mamma! <span class="heart">❤️</span></p>
-        </div>
-    </div>
+  <section>
+    <h2>Un ringraziamento speciale</h2>
+    <p>Grazie, mamma, per essere la mia guida e il mio sostegno. Ti voglio bene!</p>
+  </section>
 </body>
 </html>
